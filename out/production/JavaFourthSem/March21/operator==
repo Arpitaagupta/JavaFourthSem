@@ -1,0 +1,48 @@
+In Java, the == operator is used for reference comparison between two objects.
+When used with strings, the == operator compares the memory addresses of the two string objects.
+
+If two string objects are created using the same literal,
+they will have the same memory address and the == operator will return true when used to compare them.
+
+For example:
+String str1 = "hello";
+String str2 = "hello";
+if (str1 == str2) {
+    System.out.println("The strings are equal.");
+}
+
+In this example, the == operator is used to compare the memory addresses of the str1 and str2 objects.
+Since both objects were created using the same string literal,
+they share the same memory address and the == operator returns true.
+
+
+Example :
+String str1 = "hello";
+String str2 = "hello";
+String str3 = new String("hello");
+
+System.out.println(str1 == str2); // true
+System.out.println(str1 == str3); // false
+-->In the example above, str1 and str2 both refer to the same String object in memory,
+as they are both initialized with the same string literal. On the other hand, str3 is
+initialized using the new keyword, which creates a new String object in memory.
+When comparing str1 to str3 using the == operator, the result is false,
+because they refer to different objects in memory.
+
+
+However, if two string objects are created using different literals or using the new keyword,
+even if their content is the same, they will have different memory addresses and the == operator
+will return false when used to compare them.
+
+For example:
+
+String str4 = "world";
+String str5 = new String("world");
+
+System.out.println(str4.equals(str5)); // true
+System.out.println(str4 == str5); // false
+
+
+In the example above, str4 and str5 have the same contents, but they are two different objects in memory.
+ When comparing them using the equals() method, the result is true, because their contents are the same.
+ When comparing them using the == operator, the result is false, because they refer to different objects in memory.
