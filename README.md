@@ -84,7 +84,7 @@ Fork the repository.
 
 ## License
 
-You can copy the above content and paste it into your repository's README file on GitHub. Make sure to replace `[version]` with the appropriate Java Development Kit (JDK) version you used and add any other necessary information specific to your project.
+You can copy the above content and paste it into your repository's README file on GitHub. Make sure to replace `Java 20 or JDK 20` with the appropriate Java Development Kit (JDK) version you used and add any other necessary information specific to your project.
 
 If you have any further questions or need additional assistance, feel free to ask!
 
